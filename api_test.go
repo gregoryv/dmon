@@ -12,7 +12,6 @@ func TestUpdateState(t *testing.T) {
 	w := httptest.NewRecorder()
 
 	UpdateState(w, r)
-
 	resp := w.Result()
 
 	data, err := io.ReadAll(resp.Body)
